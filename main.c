@@ -12,9 +12,11 @@ int main(){
         printf("2 - View saved passwords.\n");
         printf("3 - Delete password.\n");
         printf("4 - Exit.\n");
-
+        
         printf("Enter your choice:\n ");
         scanf("%d", &choice);
+        int c;
+        while ((c = getchar()) != '\n' && c != EOF);
     
     switch (choice) {
         case 1:
