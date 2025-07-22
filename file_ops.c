@@ -4,10 +4,10 @@
 #include "file_ops.h"
 
     void add_password(){
-    char site [50];
-    char password[50];
-    char username[50];
-    char encrypted_password[50];
+    char site [100];
+    char password[100];
+    char username[100];
+    char encrypted_password[100];
 
     printf("Enter site name:\n");
     fgets(site, sizeof(site), stdin);
@@ -55,18 +55,19 @@
     }
     fclose(fp);
     printf("-------------------------\n");
+         
     }void delete_password() {
     char site_to_delete[50];
     printf("Enter the site name that you want to delete:\n");
    
     int c;
-    while ((c = getchar()) != '\n' && c != EOF); /
+    while ((c = getchar()) != '\n' && c != EOF); 
     fgets(site_to_delete, sizeof(site_to_delete), stdin);
     site_to_delete[strcspn(site_to_delete, "\n")] = 0;
 
     FILE *fp_read = fopen("passwords.txt", "r");
     if (fp_read == NULL) {
-        printf("Error opening the file.\n");
+        printf("Error creating temporary file.\n");
         return;
     }
 
