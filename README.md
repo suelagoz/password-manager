@@ -1,7 +1,7 @@
 
 # Password Manager in C
-This is my first C program. It is a basic password manager written in C.
-This project allows you to add , view and delete the passwords with basic encryption.
+ basic password manager written in C.
+this project allows to add , view and delete the passwords with basic encryption.
 
  ## Features
 
